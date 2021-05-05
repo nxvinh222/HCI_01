@@ -1,0 +1,18 @@
+.guide-section h5 {
+  margin: 0 3rem;
+}
+.guide-section .letters {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.guide-section button {
+  font-size: 18px;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25em;
+}
+
+.guide-section .keyboards {
+  margin-bottom: 1rem;
+}

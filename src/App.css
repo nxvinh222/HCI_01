@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+* {
+  font-family: "Montserrat", "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro";
+}
+
+table.table-borderless {
+  border: none;
+}
+
+.navbar {
+  padding-left: 8.33333%;
+  padding-right: 8.33333%;
+  height: 5rem;
+}
+
+.container {
+  margin-top: 7rem;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 35px;
+  color: #884dfb;
+}
+
+.nav-link {
+  color: #808080;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link.home {
+  padding: 0 !important;
+}
+
+.nav-link a {
+  margin: auto;
+}
+
+.nav-link a:hover,
+.nav-link .active {
+  color: #884dfb;
+  border-bottom: 3px solid #884dfb;
+  margin-bottom: -3px;
+}
+
+.nav-link.home a:hover,
+.nav-link.home .active {
+  margin-bottom: 4px;
+}
+
+.nav-link .active {
+  font-weight: bold;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-form .form-control {
+  border-radius: 2em !important;
+  padding-left: calc(1.5em + 0.75rem + 2px);
+}
+
+.search-form button {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 0em;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.button-primary {
+  background-color: #884dfb;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #ebdeff;
+  color: #224580;
+}
+
+.box-shadow {
+  box-shadow: 0px 3px 4px #888 !important;
+}
+
+.keyboards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.steno-key.pressed,
+.steno-key.pressed.wrong-pressed,
+.qwerty-steno-key.pressed,
+.qwerty-steno-key.pressed.wrong-pressed {
+  background-color: #884dfb !important;
+  color: white;
+}
+
+.steno-key.wrong-pressed,
+.qwerty-steno-key.wrong-pressed {
+  background-color: red !important;
+  color: white;
+}
+
+footer {
+  padding: 2rem 8.3333%;
+}

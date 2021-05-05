@@ -1,0 +1,163 @@
+.exercise-container {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  height: 12rem;
+  float: left;
+  width: 66.6667%;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.exercise-container .exercise {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.exercise-container .exercise .true {
+  color: #00ff04;
+}
+
+.exercise-container .exercise .false {
+  color: red;
+}
+
+.exercise-container .exercise .current {
+  background-color: #e0e0e0;
+}
+
+.exercise-container .exercise-input {
+  width: 100%;
+}
+
+.timer {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  float: left;
+  width: calc(33.3333% - 2rem);
+  height: 12rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.finding-players-overlay,
+.result-overlay {
+  position: fixed;
+  left: 0;
+  top: 5rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 25;
+}
+
+.finding-players-container,
+.result-container {
+  position: fixed;
+  top: 7rem;
+  left: 16.6665%;
+  width: 66.6667%;
+  height: calc(100vh - 9rem);
+  background-color: white;
+  padding: 2rem;
+  animation: slideUpFromDown 300ms linear;
+  overflow: auto;
+  border-radius: 1em;
+  z-index: 30;
+}
+
+.finding-players-container h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.finding-players-container ul {
+  margin-top: 5rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.finding-players-container ul li {
+  list-style: none;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finding-players-container li img {
+  margin-bottom: 0.5rem;
+  width: 100px;
+}
+
+.finding-players-container .pending-player#main-player button {
+  margin-top: 1rem;
+  border-radius: 2em;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+#my-result {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+}
+
+#my-rank,
+#my-time,
+#my-speed,
+#my-accuracy {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-container h2 {
+  padding: 0 4rem;
+  font-weight: bold;
+}
+
+.result-container button.restart-game {
+  position: absolute;
+  right: 6rem;
+  top: 2rem;
+  font-size: 24px;
+}
+
+.result-container button.restart-game:hover {
+  color: #884dfb;
+}
+
+.result-container table {
+  text-align: center;
+  margin: auto;
+}
+
+.result-container th {
+  background-color: #884dfb;
+  color: white;
+}
+
+.result-container table .main-player {
+  font-weight: bold;
+  background-color: #c4c4c4;
+}
+
+.result-container table .player-name {
+  text-align: left;
+}
+
+@keyframes slideUpFromDown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,80 @@
+.qwerty-steno-keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qwerty-steno-keyboard .qwerty-steno-key {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 1.25em;
+  border-radius: 5%;
+  background-color: #c0c0c0;
+  color: black;
+  justify-content: center;
+  padding: 0 0.25em;
+  margin: 0.125em;
+}
+
+.qwerty-steno-keyboard .qwerty-steno-key.steno-key {
+  background-color: pink;
+}
+
+.number-row,
+.top-row,
+.home-row,
+.bottom-row,
+.control-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.lower-left {
+  color: #808080;
+  text-align: left;
+}
+
+.capslock,
+.tab,
+.left-shift {
+  clear: left;
+}
+
+.tab,
+.backspace {
+  width: 6.375em !important;
+}
+
+.capslock {
+  width: 6em !important;
+}
+
+.return {
+  width: 5.675em !important;
+}
+
+.left-shift {
+  width: 7.675em !important;
+}
+
+.right-shift {
+  width: 6.8125em !important;
+}
+
+.left-ctrl,
+.right-ctrl,
+.left-os,
+.right-os,
+.left-alt,
+.right-alt {
+  width: 3.5em !important;
+}
+
+.space {
+  clear: left;
+  width: 19.875em !important;
+}

@@ -1,0 +1,56 @@
+.home1 {
+  height: 50%;
+  padding-top: 80px;
+}
+.right {
+  text-align: center;
+  width: 50%;
+  font-weight: bold;
+  padding: 20px;
+  float: left;
+}
+.tieude {
+  font-size: 30px;
+}
+.start {
+  font-size: 20px;
+  color: white;
+  background-color: #884dfb;
+  padding: 0.75em 1.25em;
+  border-radius: 2em;
+}
+.left {
+  text-align: center;
+  width: 50%;
+  font-weight: bold;
+  padding: 20px;
+  float: left;
+}
+.key {
+  width: 40px;
+  height: 70px;
+  background-color: #fccacb;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  font-size: 26px;
+}
+.home2 {
+  width: 70%;
+  margin-top: 350px;
+}
+.home3 {
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 80px;
+}
+.home4 {
+  width: 70%;
+  margin-top: 80px;
+}
+.tieude1 {
+  font-size: 40px;
+  font-weight: bold;
+}
