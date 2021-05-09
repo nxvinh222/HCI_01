@@ -5,6 +5,8 @@ import Nav from "./nav";
 import Home from "./components/home/home";
 import BaiHoc from "./components/BaiHoc/baihoc";
 import Login from "./components/Login/login";
+import Register from "./components/Login/Register";
+import ListUser from "./components/Login/ListUser";
 import LuyenGo from "./components/LuyenGo/luyengo";
 import LessionsList from "./components/BaiHoc/LessionsList";
 import Thidau from "./components/thidau/Thidau";
@@ -26,6 +28,8 @@ class App extends Component {
                         />
                         <Route path="/baihoc" component={BaiHoc} />
                         <Route path="/login" component={Login} />
+                        <Route path="/register" component={Register} />
+                        <Route path="/listUser" component={ListUser} />
                         <Route path="/luyengo" component={LuyenGo} />
                         <Route path="/tiendo" component={TienDo} />
                         <Route path="/thidau" component={Thidau} />

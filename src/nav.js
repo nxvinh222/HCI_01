@@ -53,6 +53,30 @@ export default class Nav extends Component {
                                     Soạn thảo
                                 </NavLink>
                             </li>
+                            <li className="nav-link">
+                                <NavLink
+                                    to="/login"
+                                    activeClassName="active"
+                                >
+                                    Login
+                                </NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink
+                                    to="/register"
+                                    activeClassName="active"
+                                >
+                                    Register
+                                </NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink
+                                    to="/listUser"
+                                    activeClassName="active"
+                                >
+                                    List User
+                                </NavLink>
+                            </li>
                         </ul>
                         <form className="form-inline search-form">
                             <input
@@ -64,24 +88,6 @@ export default class Nav extends Component {
                                 <MdSearch />
                             </button>
                         </form>
-                        {/* {localStorage.getItem("username") ? ( */}
-                        {/*     <DropdownButton */}
-                        {/*         id="dropdown-basic-button" */}
-                        {/*         title={localStorage.getItem("username")} */}
-                        {/*         style={{ marginLeft: 8 }} */}
-                        {/*     > */}
-                        {/*         <Dropdown.link */}
-                        {/*             href="#/action-1" */}
-                        {/*             onClick={this.logout} */}
-                        {/*         > */}
-                        {/*             Đăng xuất */}
-                        {/*         </Dropdown.link> */}
-                        {/*     </DropdownButton> */}
-                        {/* ) : ( */}
-                        {/*     <Link to={"/login"} className="nav-link"> */}
-                        {/*         Đăng nhập | Đăng ký */}
-                        {/*     </Link> */}
-                        {/* )} */}
                     </div>
                 </nav>
             </header>
