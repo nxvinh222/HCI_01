@@ -7,7 +7,7 @@ import BaiHoc from "./components/BaiHoc/baihoc";
 import Login from "./components/Login/login";
 import Register from "./components/Login/Register";
 import ListUser from "./components/Login/ListUser";
-import LuyenGo from "./components/LuyenGo/luyengo";
+import LuyenGo from "./components/LuyenGo/LuyenGo";
 import LessionsList from "./components/BaiHoc/LessionsList";
 import Thidau from "./components/thidau/Thidau";
 import TienDo from "./components/TienDo/tiendo";
