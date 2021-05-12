@@ -265,7 +265,8 @@ export const WORDS = [
 ];
 
 export const TOPICS = [
-    {
+    {    
+        index: 1,
         title: "Giới thiệu bàn phím gõ tốc ký",
         lessions: [
             "Bàn phím gõ tốc ký",
@@ -276,6 +277,7 @@ export const TOPICS = [
         numberOfCompletedLessions: 3,
     },
     {
+        index: 2,
         title: "Quy tắc gõ âm đầu",
         lessions: [
             "Những âm có cùng cách phát âm với phím tốc ký",
@@ -286,11 +288,13 @@ export const TOPICS = [
         numberOfCompletedLessions: 3,
     },
     {
+        index: 3,
         title: "Quy tắc gõ âm chính không có âm đệm",
         lessions: ["Nhóm âm ngắn", "Nhóm âm ngoại lệ"],
         numberOfCompletedLessions: 2,
     },
     {
+        index: 4,
         title: "Quy tắc gõ âm chính có âm đệm",
         lessions: [
             "Những âm có cùng dạng chữ với phím tốc ký ",
@@ -299,6 +303,7 @@ export const TOPICS = [
         numberOfCompletedLessions: 1,
     },
     {
+        index: 5,
         title: "Quy tắc gõ dấu thanh",
         lessions: [
             "Dấu thanh đường nét thẳng",
@@ -307,6 +312,7 @@ export const TOPICS = [
         numberOfCompletedLessions: 0,
     },
     {
+        index: 6,
         title: "Quy tắc gõ âm cuối",
         lessions: [
             "Những âm có cùng dạng chữ với phím tốc ký",

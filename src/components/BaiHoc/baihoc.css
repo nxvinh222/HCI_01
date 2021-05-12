@@ -2,10 +2,14 @@
   padding: 0.5rem;
 }
 
+.course-index {
+  margin-bottom: 0;
+}
+
 li.topic-item {
   position: relative;
   margin: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   height: 11rem;
   list-style: none;
 }
