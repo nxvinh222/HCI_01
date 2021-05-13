@@ -5,6 +5,9 @@ import StenoKeyboard from "../keyboard/steno-keyboard/StenoKeyboard";
 import StenoInput from "../keyboard/StenoInput";
 import { Tabs, Tab } from "react-bootstrap";
 
+import 'react-simple-keyboard/build/css/index.css';
+import VirtualKeyboard from "../keyboard/virtualKeyboard/VirtualKeyboard"
+
 export default class LuyenGo extends Component {
     constructor() {
         super();
@@ -182,8 +185,15 @@ export default class LuyenGo extends Component {
                     {/* </Tab> */}
                 </Tabs>
                 <div className="keyboards">
+                <VirtualKeyboard
+                    disableHand={true}
+                    hintKey=" "
+                />
+                {/* 
                     <QwertyStenoKeyboard style={{ fontSize: 14 }} />
                     <StenoKeyboard style={{ fontSize: 20 }} />
+
+                    */}
                 </div>
             </>
         );
