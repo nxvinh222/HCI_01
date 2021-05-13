@@ -6,6 +6,7 @@ import StenoInput from "../keyboard/StenoInput";
 import { Tabs, Tab } from "react-bootstrap";
 import LuyenGoDoan from "./LuyengGoDoan/LuyenGoDoan";
 import LuyenGoAm from "./LuyengGoDoan/LuyenGoAm";
+import Huongdan from "./LuyengGoDoan/Huongdan";
 
 const LuyenGo = () => {
 
@@ -14,7 +15,7 @@ const LuyenGo = () => {
             <Tabs defaultActiveKey="luyen-go-am">
 
                 <Tab eventKey="Huong dan" title="Hướng dẫn luyện gõ">
-
+                    <Huongdan/>
                 </Tab>
                 {/* <Tab eventKey="luyen-go-phim" title="Luyện gõ phím">
                         <div className="tab-item-wrapper">
