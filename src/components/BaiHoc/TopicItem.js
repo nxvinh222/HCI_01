@@ -9,8 +9,8 @@ function TopicItem(props) {
     console.log(props.key)
 
     return (
-        <li className="topic-item">
-            <Link to="/baihoc/1">
+        <div className="topic-item">
+            <Link to="#">
                 <h3 className="course-index main-text-color fw-bold">Bài {index}:</h3>
                 <h3 className="title">{title}</h3>
                 <div className="topic-content">
@@ -34,9 +34,22 @@ function TopicItem(props) {
                         <p></p>
                         <ProgressBar now={progress} />
                     </div>
+                    <br/>
+                    
                 </div>
             </Link>
-        </li>
+            <a className="my-2"  href="/baihoc/1">
+                {(numberOfCompletedLessions) != 0 ? (
+                    <div>
+                        <button type="button"className="btn btn-primary p-2 my-2">Học từ đầu</button>
+                        <div class="divider"/>
+                        <button type="button" className="btn btn-primary p-2 my-2">Học tiếp bài {numberOfCompletedLessions}</button>
+                    </div>
+                ) : (
+                    <button type="button" className="btn btn-primary p-2 my-2">Bắt đầu học</button>
+                )}
+            </a>
+        </div>
     );
 }
 

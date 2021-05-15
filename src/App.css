@@ -114,6 +114,15 @@ a:hover {
   color: #224580;
 }
 
+.btn-primary {
+  background-color: var(--main-color) !important;
+  color: white !important; 
+}
+.btn-primary:hover {
+  transform: scale(1.1) perspective(0.2px)
+}
+
+
 .box-shadow {
   box-shadow: 0px 3px 4px #888 !important;
 }

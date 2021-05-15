@@ -6,23 +6,23 @@
   margin-bottom: 0;
 }
 
-li.topic-item {
+.topic-item {
   position: relative;
   margin: 1rem;
   padding: 0.5rem 2rem;
-  height: 11rem;
+  /* height: 14rem; */
   list-style: none;
 }
 
-li.topic-item:hover {
-  color: var(--main-color);
+.topic-item:hover {
+  color: #2D3142;
 }
 
-li.topic-item > a {
+.topic-item > a {
   text-decoration: none;
 }
 
-li.topic-item > a:hover {
+.topic-item > a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -61,6 +61,11 @@ li.topic-item > a:hover {
   flex-direction: column;
 }
 
+.topic-item:hover .progress-wrapper {
+  cursor: default !important;
+  color: var(--main-color);
+}
+
 .progress-wrapper p {
   text-align: center;
   margin-bottom: 0 !important;
@@ -74,4 +79,10 @@ li.topic-item > a:hover {
 .progress-bar {
   border-radius: 2em !important;
   background-color: var(--main-color);
+}
+
+.divider{
+  width:9px;
+  height:auto;
+  display:inline-block;
 }
