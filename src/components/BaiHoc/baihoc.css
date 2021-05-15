@@ -15,7 +15,7 @@ li.topic-item {
 }
 
 li.topic-item:hover {
-  color: rgba(136, 77, 251, 1);
+  color: var(--main-color);
 }
 
 li.topic-item > a {
@@ -68,10 +68,10 @@ li.topic-item > a:hover {
 
 .progress {
   border-radius: 2em !important;
-  background-color: rgba(136, 77, 251, 0.3);
+  background-color: rgba(22, 22, 22, 0.3);
 }
 
 .progress-bar {
   border-radius: 2em !important;
-  background-color: rgba(136, 77, 251, 1);
+  background-color: var(--main-color);
 }

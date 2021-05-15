@@ -25,36 +25,42 @@ function LessionContent(props) {
     };
 
     return (
-        <div className="lession-wrapper">
-            <div className="close-icon" onClick={hideLessionContent}>
-                <MdClose />
-            </div>
-            <div
-                ref={lessionContentWrapperRef}
-                className="lession-content-wrapper"
-            >
-                <section className="lession-header">
-                    <h3 className="topic-header">Học gõ âm đầu</h3>
-                    <h5 className="lession-title">
-                        Những âm có cùng cách phát âm với phím tốc ký
-                    </h5>
-                </section>
-                <StenoRulesTable />
-                <FingerPlaceGuide />
-                <button
-                    id="practice-button"
-                    onClick={showLessionPracticeContent}
+        // <div className="lession-wrapper">
+            <div className="container">
+                {lessionPracticeContent == null && (
+                    <div className="close-icon" onClick={hideLessionContent}>
+                        <a href="/baihoc"><MdClose /></a>          
+                    </div>
+                )}
+                
+                <div
+                    ref={lessionContentWrapperRef}
+                    // className="lession-content-wrapper"
                 >
-                    Luyện tập
-                    <MdArrowForward size="1.5em" />
-                </button>
+                    <section className="lession-header">
+                        <h3 className="topic-header">Học gõ âm đầu</h3>
+                        <h5 className="lession-title">
+                            Những âm có cùng cách phát âm với phím tốc ký
+                        </h5>
+                    </section>
+                    <StenoRulesTable />
+                    <FingerPlaceGuide />
+                    <button
+                        id="practice-button"
+                        onClick={showLessionPracticeContent}
+                    >
+                        Luyện tập
+                        <MdArrowForward size="1.5em" />
+                    </button>
+                </div>
+                {lessionPracticeContent !== null && (
+                    <LessionPracticeContent
+                        hidePracticeContent={hidePracticeContent}
+                    />
+                )}
             </div>
-            {lessionPracticeContent !== null && (
-                <LessionPracticeContent
-                    hidePracticeContent={hidePracticeContent}
-                />
-            )}
-        </div>
+            
+        // </div>
     );
 }
 

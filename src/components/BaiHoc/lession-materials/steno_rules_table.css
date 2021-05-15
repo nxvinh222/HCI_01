@@ -15,6 +15,6 @@
 }
 
 .rules-table th {
-  background-color: #884dfb;
+  background-color: var(--main-color);
   color: white;
 }

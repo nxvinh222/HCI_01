@@ -119,11 +119,11 @@ function FingerPlaceGuide() {
                     r
                 </button>
             </div>
-            <div className="keyboards">
-                <QwertyStenoKeyboad style={{ fontSize: 12 }} />
-                <StenoKeyboard style={{ fontSize: 18 }} />
+            <div className="keyboards row">
+                <QwertyStenoKeyboad className="col" style={{ fontSize: 12 }} />
+                <StenoKeyboard className="col" style={{ fontSize: 18 }} />
             </div>
-            <Hands />
+            {/* <Hands /> */}
         </section>
     );
 }

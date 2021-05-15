@@ -13,6 +13,10 @@ h6 {
   font-family: "Source Sans Pro";
 }
 
+:root {
+  --main-color:#D81E5B;
+}
+
 table.table-borderless {
   border: none;
 }
@@ -30,7 +34,7 @@ table.table-borderless {
 
 .logo {
   font-size: 35px;
-  color: #884dfb;
+  color: var(--main-color);
 }
 
 .nav-link {
@@ -51,8 +55,8 @@ table.table-borderless {
 
 .nav-link a:hover,
 .nav-link .active {
-  color: #884dfb;
-  border-bottom: 3px solid #884dfb;
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
   margin-bottom: -3px;
 }
 
@@ -101,7 +105,7 @@ a:hover {
 }
 
 .button-primary {
-  background-color: #884dfb;
+  background-color: var(--main-color);
   color: white;
 }
 
@@ -117,14 +121,14 @@ a:hover {
 .keyboards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .steno-key.pressed,
 .steno-key.pressed.wrong-pressed,
 .qwerty-steno-key.pressed,
 .qwerty-steno-key.pressed.wrong-pressed {
-  background-color: #884dfb !important;
+  background-color: var(--main-color) !important;
   color: white;
 }
 
@@ -139,5 +143,5 @@ footer {
 }
 
 .main-text-color {
-  color: #884dfb;
+  color: var(--main-color);
 }

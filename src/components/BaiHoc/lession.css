@@ -102,7 +102,7 @@
 #next-key:hover,
 #hide-practice-button:hover,
 #practice-button:hover {
-  color: #884dfb;
+  color: var(--main-color);
 }
 
 .require-key {

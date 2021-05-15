@@ -1,10 +1,10 @@
 .nav-item.nav-link.active {
-  background-color: #884dfb;
+  background-color: var(--main-color);
   color: beige;
   font-weight: bold;
 }
 .activeLG {
-  background-color: #884dfb;
+  background-color: var(--main-color);
   color: beige;
 }
 .center {
@@ -19,7 +19,7 @@
   height: 70%;
 }
 .tabbar2 {
-  border: #884dfb solid 1px;
+  border: var(--main-color) solid 1px;
   text-align: center;
   width: 150px;
   height: 28px;

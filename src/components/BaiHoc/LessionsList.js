@@ -1,6 +1,7 @@
 import LeaderLine from "react-leader-line";
 import LessionItem from "./LessionItem";
 import { useRef, useEffect, useState } from "react";
+import  { Redirect } from 'react-router-dom'
 import LessionContent from "./LessionContent";
 
 function LessionsList() {
@@ -84,13 +85,13 @@ function LessionsList() {
     };
 
     const hideLessionContent = () => {
-        document.querySelector(".lession-wrapper").style.transform =
-            "translateY(100%)";
-        const timer = setTimeout(() => {
-            setLessionContent(null);
-            document.body.style.overflow = "auto";
-            clearTimeout(timer);
-        }, 300);
+        // document.querySelector(".lession-wrapper").style.transform =
+        //     "translateY(100%)";
+        // const timer = setTimeout(() => {
+        //     setLessionContent(null);
+        //     document.body.style.overflow = "auto";
+        //     clearTimeout(timer);
+        // }, 300);
     };
 
     return (
