@@ -119,6 +119,9 @@ a:hover {
   color: white !important; 
 }
 .btn-primary:hover {
+  background-color: white !important;
+  color: var(--main-color) !important; 
+  border-color: var(--main-color) !important;
   transform: scale(1.1) perspective(0.2px)
 }
 
