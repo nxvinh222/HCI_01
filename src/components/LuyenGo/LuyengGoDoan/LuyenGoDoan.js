@@ -34,16 +34,22 @@ const LuyenGoDoan = () => {
 		clearInterval(interval)
 	}
 
-	const setTimer = () => {
+	const setTimer = (e) => {
 		const now = Date.now()
-		const seconds = now + duration * 1000
-		interval = setInterval(() => {
-			const secondLeft = Math.round((seconds - Date.now()) / 1000)
-			setDuration(secondLeft)
-			if (secondLeft === 0) {
-				handleEnd()
-			}
-		}, 1000)
+        const seconds = now + duration * 1000
+        if (e === 0) {
+            handleEnd();
+        }
+        else {
+            interval = setInterval(() => {
+                const secondLeft = Math.round((seconds - Date.now()) / 1000)
+                setDuration(secondLeft);
+                console.log(secondLeft);
+                if (secondLeft === 0) {
+                    handleEnd();
+                }
+            }, 1000)
+        }
 	}
 
 	const handleStart = () => {
@@ -51,7 +57,7 @@ const LuyenGoDoan = () => {
 		setEnded(false)
 		setInput(quote.quote)
 		inputRef.current.focus()
-		setTimer()
+		setTimer(duration)
 	}
 
 	const handleKeyDown = e => {
@@ -132,19 +138,8 @@ const LuyenGoDoan = () => {
 					</div>
 					{/* Body */}
 					<div className="col-sm-12 col-md-8 order-md-1">
-						<div className="container">
+						<div>
 							<div className="text-center mt-4 header">
-								<h1>How Fast Can You Type?</h1>
-								<p className="lead">
-									Start the one-minute Typing speed test and find out how fast can you type in real
-									world!
-								</p>
-
-								<div className="alert alert-danger" role="alert">
-									Just start typing and don't use <b>backspace</b> to correct your mistakes. Your
-									mistakes will be marked in <u>Red</u> color and shown below the writing box. Good
-									luck!
-								</div>
 
 								<div className="control my-5">
 									{ended ? (
@@ -155,9 +150,12 @@ const LuyenGoDoan = () => {
 											Reload
 										</button>
 									) : started ? (
-										<button className="btn btn-circle btn-outline-success" disabled>
-											Hurry
-										</button>
+										<button
+                                            className="btn btn-outline-danger btn-circle"
+                                            onClick={() => { setTimer(0) }}
+                                        >
+                                            END
+                                        </button>
 									) : (
 										<button className="btn btn-circle btn-outline-success" onClick={handleStart}>
 											GO!
@@ -191,26 +189,6 @@ const LuyenGoDoan = () => {
 
 							<div className="p-4 mt-4 bg-dark text-light rounded lead" ref={outputRef} />
 
-							<h6 className="mt-5">Tip!</h6>
-							<ul>
-								<li>
-									Word Per Minute (WPM) is measured by calculating how many words you can type in 1
-									minute.
-								</li>
-								<li>Character Per Minute (CPM) calculates how many characters are typed per minute.</li>
-								<li>
-									The top typing speed was achieved by{' '}
-									<a
-										href="https://en.wikipedia.org/wiki/Typing#Alphanumeric_entry"
-										rel="noopener noreferrer"
-										target="_blank"
-									>
-										Stella Pajunas
-									</a>{' '}
-									in 1946, whereas Mrs. Barbara Blackburn has averaged 150 wpm in 50 minutes and her
-									top speed was 212 wpm.
-								</li>
-							</ul>
 							<hr className="my-4" />
 							<div className="mb-5">
 								<h6 className="py-2">Average Typing Speeds</h6>

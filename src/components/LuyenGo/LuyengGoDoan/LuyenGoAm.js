@@ -38,10 +38,10 @@ const LuyenGoAm = () => {
     const setTimer = (e) => {
         const now = Date.now()
         const seconds = now + duration * 1000
-        if(e === 0){
+        if (e === 0) {
             handleEnd();
         }
-        else{
+        else {
             interval = setInterval(() => {
                 const secondLeft = Math.round((seconds - Date.now()) / 1000)
                 setDuration(secondLeft);
@@ -143,12 +143,6 @@ const LuyenGoAm = () => {
                         <div >
                             <div className="text-center mt-4 header">
                                 <div className="control my-5">
-                                    <button
-                                        className="btn btn-outline-danger btn-circle"
-                                        onClick={() => {setTimer(0)}}
-                                    >
-                                        END
-										</button>
                                     {ended ? (
                                         <button
                                             className="btn btn-outline-success btn-circle"
@@ -157,8 +151,11 @@ const LuyenGoAm = () => {
                                             Reload
                                         </button>
                                     ) : started ? (
-                                        <button className="btn btn-circle btn-outline-success" disabled>
-                                            Hurry
+                                        <button
+                                            className="btn btn-outline-danger btn-circle"
+                                            onClick={() => { setTimer(0) }}
+                                        >
+                                            END
                                         </button>
                                     ) : (
                                         <button className="btn btn-circle btn-outline-success" onClick={handleStart}>
