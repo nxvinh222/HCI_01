@@ -5,9 +5,9 @@ import "./home.css";
 
 export default class Home extends Component {
     render() {
-        return (
+        return (            
             <div>
-                <div className="home1">
+                <div className="home1" id ='home1'>
                     <div className="right">
                         <span className="tieude">
                             "Tốc ký là một nghệ thuật,
@@ -26,7 +26,8 @@ export default class Home extends Component {
                         <StenoKeyboard style={{ fontSize: 20 }} />
                     </div>
                 </div>
-                <div className="home2">
+
+                <div className="home2" id='home2'>
                     <span className="tieude1">
                         Làm thế nào để thuộc được các chữ cái trên bàn phím
                         steno
@@ -44,7 +45,8 @@ export default class Home extends Component {
                         chơi, cũng là để bạn luyện gõ tốc ký thuần thục.
                     </span>
                 </div>
-                <div className="home3">
+
+                <div className="home3" id ='home3'>
                     <span className="tieude1">
                         Làm thế nào để việc học tốc ký trở nên vui vẻ?
                     </span>
@@ -63,23 +65,7 @@ export default class Home extends Component {
                         để cố gắng đánh bại wpm cao nhất của chính họ.
                     </span>
                 </div>
-                <div className="home4">
-                    <span className="tieude1">
-                        Làm thế nào để thu hút người học gõ tốc ký?
-                    </span>
-                    <br />
-                    <span>
-                        Trong phạm vi Game tốc ký của chúng tôi, người chơi được
-                        học vị trí đặt ngón tay, thuộc được các âm cấu tạo nên
-                        từ, cách viết. Ngoài những kỹ năng cốt lõi này, trang
-                        web của chúng tôi cũng chú ý đến việc học các kỹ năng
-                        chính tả cần thiết. Học gõ tốc ký sẽ giảm sự thú vị nếu
-                        người chơi chỉ tự chơi một mình. Vì vậy chúng tôi đã
-                        nghĩ: Tại sao không để người chơi vui vẻ gõ cùng nhau?
-                        Đây là ý tưởng cho sự phát triển của trang web học gõ
-                        tốc ký này.
-                    </span>
-                </div>
+               
             </div>
         );
     }
