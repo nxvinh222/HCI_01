@@ -7,6 +7,7 @@ import { Tabs, Tab } from "react-bootstrap";
 import LuyenGoDoan from "./LuyengGoDoan/LuyenGoDoan";
 import LuyenGoAm from "./LuyengGoDoan/LuyenGoAm";
 import Huongdan from "./LuyengGoDoan/Huongdan";
+import VirtualKeyboard from "../keyboard/virtualKeyboard/VirtualKeyboard";
 
 const LuyenGo = () => {
 
@@ -27,10 +28,17 @@ const LuyenGo = () => {
                     <LuyenGoDoan />
                 </Tab>
             </Tabs>
+
+            <VirtualKeyboard
+                    disableHand={true}
+                    hintKey=" "
+                />
+        {/*
             <div className="keyboards">
                 <QwertyStenoKeyboard style={{ fontSize: 14 }} />
                 <StenoKeyboard style={{ fontSize: 20 }} />
             </div>
+        */}
         </>
     );
 }

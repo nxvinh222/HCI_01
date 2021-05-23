@@ -90,7 +90,7 @@ export default class Nav extends Component {
                                 </li>
                                 <li className="nav-link">
                                     <NavLink
-                                        to="/soanthao"
+                                        to="/register"
                                         activeClassName="active"
                                     >
                                         Đăng ký
@@ -98,7 +98,7 @@ export default class Nav extends Component {
                                 </li>
                                 <li className="nav-link">
                                     <NavLink
-                                        to="/logout"
+                                        to="/login"
                                         activeClassName="active"
                                     >
                                         Đăng nhập
