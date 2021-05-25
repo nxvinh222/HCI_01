@@ -28,7 +28,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <div className="row" style={{ marginTop: '40px' }}>
+        <div className="row" style={{ marginTop: '20px' }}>
           <div className="col-md-4 offset-md-4">
             <form className="form-signin">
               <h2 className="form-signin-heading">Đăng nhập</h2>
@@ -42,8 +42,10 @@ export default class Login extends React.Component {
                     name="name" 
                     id="inputname" 
                     className="form-control" 
-                    placeholder="User name" 
+                    placeholder="Tên đăng nhập" 
                     required autofocus />
+
+                    <br/>
 
               <label for="inputPassword" 
                       className="sr-only">Mật khẩu</label>
@@ -52,8 +54,10 @@ export default class Login extends React.Component {
                     onChange={this.handlePasswordChange} 
                     id="inputPassword" 
                     className="form-control" 
-                    placeholder="Password" 
+                    placeholder="Mật khẩu" 
                     required autofocus />
+
+                    <br/>
 
               <button 
                     className="btn btn-lg btn-primary btn-block" 

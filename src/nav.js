@@ -6,13 +6,25 @@ import { MdHome, MdSearch } from "react-icons/md";
 export default class Nav extends Component {
     constructor(props){
         super(props);
-        this.state= {
-            logined:false
-        }
+
+        var name = localStorage.getItem('username');
+        if (name != null && name != undefined) {
+            this.state= {
+                logined:true
+            }
+        } else {
+            this.state= {
+                logined:false
+            }
+        }  
+
     }
+
+    
     logout() {
-        localStorage.removeItem("username");
+        localStorage.removeItem('username');
         window.location.reload();
+
     }
     render() {
         return (
@@ -68,16 +80,18 @@ export default class Nav extends Component {
                                         Soạn thảo
                                     </NavLink>
                                 </li>
+
                                 <li className="nav-link">
                                     <NavLink
-                                        to="/logout"
+                                        onClick={this.logout}
+                                        to="/"
                                         activeClassName="active"
                                     >
                                         Đăng xuất
                                     </NavLink>
                                 </li>
                                 </>
-                                :
+                            :
                                 <>
                                 <li className="nav-link">
                                     <a href='#home1'>Giới thiệu</a>
@@ -105,7 +119,7 @@ export default class Nav extends Component {
                                     </NavLink>
                                 </li>
                             </>
-                            }
+    }
                            
                         </ul>
                     </div>
