@@ -29,7 +29,7 @@ export default class Nav extends Component {
     render() {
         return (
             <header>
-                <nav className="navbar navbar-expand-sm bg-light shadow fixed-top">
+                <nav className="navbar navbar-expand-sm bg-light shadow">
                     <div
                         className="collapse navbar-collapse"
                         id="navbarSupportedContent"
