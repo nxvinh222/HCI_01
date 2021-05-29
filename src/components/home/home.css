@@ -1,16 +1,126 @@
-.home1 {
-  height: 50%;
-  padding-top: 80px;
+.header .header-content {
+    padding-top: 1rem;
 }
-.right {
+.header .text-container {
+    margin-top: 5.375rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.header .image-container {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.tieude1{
+  color: #d81e5b;
+}
+
+.cards-1 {
+  padding-top: 4rem;
+  padding-bottom: 1.625rem;
   text-align: center;
-  width: 50%;
-  font-weight: bold;
-  padding: 20px;
-  float: left;
 }
-.tieude {
-  font-size: 30px;
+
+.cards-1 h2 {
+  margin-bottom: 1rem;
+}
+
+.cards-1 .card {
+  max-width: 21rem;
+  margin-right: auto;
+  margin-bottom: 4.5rem;
+  margin-left: auto;
+  padding: 3.25rem 2rem 2rem 2rem;
+  border: 1px solid #c4d8dc;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+.cards-1 .card-image {
+  width: 6rem;
+  height: 6rem;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+
+.cards-1 .card-title {
+  margin-bottom: 0.875rem;
+}
+
+.cards-1 .card-body {
+  padding: 0;
+}
+
+h1 {
+  color: #393939;
+  font: 700 3rem/3.5rem "Raleway", sans-serif;
+}
+
+h2 {
+  color: #393939;
+  font: 700 2.25rem/2.75rem "Raleway", sans-serif;
+}
+
+h3 {
+  color: #393939;
+  font: 700 1.75rem/2rem "Raleway", sans-serif;
+}
+
+h4 {
+  color: #393939;
+  font: 700 1.375rem/1.875rem "Raleway", sans-serif;
+}
+
+h5 {
+  color: #393939;
+  font: 700 1.125rem/1.625rem "Raleway", sans-serif;
+}
+
+h6 {
+  color: #393939;
+  font: 700 1rem/1.5rem "Raleway", sans-serif;
+}
+body,
+p {
+  color: #626262;
+  font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+}
+
+.p-large {
+  font: 400 1rem/1.5rem "Raleway", sans-serif;
+}
+
+.p-small {
+  font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+}
+
+.p-heading {
+  margin-bottom: 3.875rem;
+}
+.game-style{
+  justify-content: space-between
+}
+.game-thumb {
+  border: 20px solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin-bottom: 20px;
+  
+}
+
+.game-thumb:hover {
+  cursor: pointer;
+  width: 97%;
+  transition: 0.4s;
+}
+
+.tieude2{
+  color: #d81e5b;
+  font-size: 20px ;
+  font-weight: bolder;
+
 }
 .start {
   font-size: 20px;
@@ -21,11 +131,13 @@
 }
 .left {
   text-align: center;
-  width: 50%;
+  width: 60%;
   font-weight: bold;
   padding: 20px;
   float: left;
 }
+
+
 .key {
   width: 40px;
   height: 70px;
@@ -38,8 +150,9 @@
   font-size: 26px;
 }
 .home2 {
-  width: 70%;
-  margin-top: 350px;
+    padding-top: 4rem;
+    padding-bottom: 1.625rem;
+    text-align: center;
 }
 .home3 {
   width: 75%;

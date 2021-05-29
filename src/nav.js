@@ -25,16 +25,6 @@ export default class Nav extends Component {
                         <Link to={"/"} className="navbar-brand logo">
                             Gõ Tốc Ký
                         </Link>
-                        <form className="form-inline search-form ml-5">
-                            <input
-                                className="form-control mr-sm-2"
-                                type="text"
-                                placeholder="Search"
-                            />
-                            <button>
-                                <MdSearch />
-                            </button>
-                        </form>
 
                         <ul className="navbar-nav  ml-auto">
                             {
@@ -79,30 +69,22 @@ export default class Nav extends Component {
                                 </>
                                 :
                                 <>
-                                <li className="nav-link">
-                                    <a href='#home1'>Giới thiệu</a>
+                                 <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#header">Giới thiệu<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li className="nav-link">
-                                    <a href='#home2'>Nội dung khóa học</a>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#home2">Nội dung khóa học</a>
                                 </li>
-                                <li className="nav-link">
-                                    <a href='#home3'>Liên hệ</a>
+
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#home3">Liên hệ</a>
                                 </li>
-                                <li className="nav-link">
-                                    <NavLink
-                                        to="/soanthao"
-                                        activeClassName="active"
-                                    >
-                                        Đăng ký
-                                    </NavLink>
+
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="login.html">Đăng nhập</a>
                                 </li>
-                                <li className="nav-link">
-                                    <NavLink
-                                        to="/logout"
-                                        activeClassName="active"
-                                    >
-                                        Đăng nhập
-                                    </NavLink>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="register.html">Đăng ký</a>
                                 </li>
                             </>
                             }
