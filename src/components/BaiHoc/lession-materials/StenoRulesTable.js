@@ -38,6 +38,7 @@ function StenoRulesTable() {
                         <td>r</td>
                     </tr>
                 </tbody>
+                
             </Table>
         </section>
     );

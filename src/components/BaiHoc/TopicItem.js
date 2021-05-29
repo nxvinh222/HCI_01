@@ -10,14 +10,14 @@ function TopicItem(props) {
 
     return (
         <div className="topic-item">
-            <Link to="#">
-                <h3 className="course-index main-text-color fw-bold">Bài {index}:</h3>
+            <Link to="/baihoc/1">
+                <h3 className="course-index main-text-color fw-bold">Phần {index}:</h3>
                 <h3 className="title">{title}</h3>
                 <div className="topic-content">
                     <ul className="topic-content__lessions">
                         {lessions.map((lessionTitle, index) => (
-                            <li className="topic-content__lession" key={index}>
-                                {lessionTitle}
+                            <li className="topic-content__lession m-2" key={index}>
+                                {lessionTitle} <i className="fas fa-arrow-right" style={{"color": "#D81E5B"}}></i>
                             </li>
                         ))}
                     </ul>
@@ -38,17 +38,27 @@ function TopicItem(props) {
                     
                 </div>
             </Link>
-            <a className="my-2"  href="/baihoc/1">
+            <div className="my-2">
                 {(numberOfCompletedLessions) != 0 ? (
                     <div>
-                        <button type="button"className="btn btn-primary p-2 my-2">Học từ đầu</button>
+                        <a href="/baihocnew/1">
+                            <button type="button"className="btn btn-primary p-2 my-2">Học từ đầu</button>
+                        </a>
                         <div class="divider"/>
-                        <button type="button" className="btn btn-primary p-2 my-2">Học tiếp bài {numberOfCompletedLessions}</button>
+                        <a href="/baihoc/1">
+                            {((numberOfCompletedLessions + 1) == lessions.length) && 
+                                <button type="button" className="btn btn-primary p-2 my-2">Học tiếp bài {numberOfCompletedLessions + 1}</button>
+                            }
+                        </a>
                     </div>
+                    
                 ) : (
-                    <button type="button" className="btn btn-primary p-2 my-2">Bắt đầu học</button>
+                    <a href="/baihocnew/1">
+                        <button type="button" className="btn btn-primary p-2 my-2">Bắt đầu học</button>
+                    </a>
+                    
                 )}
-            </a>
+            </div>
         </div>
     );
 }

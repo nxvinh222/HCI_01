@@ -1,0 +1,43 @@
+.nav-item.nav-link.active {
+  background-color: var(--main-color);
+  color: beige;
+  font-weight: bold;
+}
+.activeLG {
+  background-color: var(--main-color);
+  color: beige;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5rem 2.5rem;
+  justify-content: space-between;
+}
+.leftLG {
+  width: 60%;
+  height: 70%;
+}
+.tabbar2 {
+  border: var(--main-color) solid 1px;
+  text-align: center;
+  width: 150px;
+  height: 28px;
+  line-height: 28px;
+}
+.box {
+  width: 610px;
+  height: 200px;
+  border: #a59a9a solid 1px;
+  padding: 40px;
+}
+.rightLG {
+  padding-top: 28px;
+  text-align: center;
+}
+.time {
+  font-size: 40px;
+  width: 300px;
+  height: 200px;
+  border: #a59a9a solid 1px;
+}
