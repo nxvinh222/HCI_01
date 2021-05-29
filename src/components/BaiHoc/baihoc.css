@@ -54,6 +54,10 @@
   font-size: 14px;
 }
 
+.topic-content__lession:hover {
+  color: var(--main-color);
+}
+
 .progress-wrapper {
   width: 33.3333%;
   margin: 0 auto;

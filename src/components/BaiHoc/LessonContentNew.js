@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import LessionPracticeContent from "./LessionPracticeContent";
 import { MdClose, MdArrowForward } from "react-icons/md";
 
-function LessionContent(props) {
+function LessionContentNew(props) {
     const lessionContentWrapperRef = useRef();
     const { hideLessionContent } = props;
     const [lessionPracticeContent, setLessionPracticeContent] = useState(null);
@@ -33,8 +33,8 @@ function LessionContent(props) {
             )}
             <div className="row my-3">
                 <span className="previous-lesson col text-left">
-                    <a href='/baihoc/1'>
-                        <button className="btn btn-primary">
+                    <a>
+                        <button className="btn btn-outline-secondary">
                             <i class="fas fa-arrow-left"></i> Bài học trước
                         </button>
                     </a>
@@ -84,4 +84,4 @@ function LessionContent(props) {
     );
 }
 
-export default LessionContent;
+export default LessionContentNew;

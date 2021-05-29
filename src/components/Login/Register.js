@@ -65,17 +65,17 @@ export default class Register extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Password : </label>
+                        <label>Mật khẩu : </label>
                         <input type="password" className="form-control" value={this.state.password}
                                onChange={this.onChangePassword}/>
                     </div>
                     <div className="form-group">
-                        <label>Age: </label>
+                        <label>Tuổi: </label>
                         <input type="text" className="form-control" value={this.state.age}
                                onChange={this.onChangeAge}/>
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Register User" className="btn btn-primary"/>
+                        <input type="submit" value="Đăng ký" className="btn btn-primary"/>
                     </div>
                 </form>
             </div>

@@ -8,8 +8,9 @@ import Login from "./components/Login/login";
 import Register from "./components/Login/Register";
 import ListUser from "./components/Login/ListUser";
 import LuyenGo from "./components/LuyenGo/LuyenGo";
-import LessionsList from "./components/BaiHoc/LessionsList";
 import LessionContent from "./components/BaiHoc/LessionContent";
+import LessonContentNew from "./components/BaiHoc/LessonContentNew";
+import LessonLearn from "./components/BaiHoc/LessonLearn";
 import Thidau from "./components/thidau/Thidau";
 import TienDo from "./components/TienDo/tiendo";
 import Soanthao from "./components/soanthao/Soanthao";
@@ -25,8 +26,16 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route
                             path="/baihoc/:topicId"
-                            // component={LessionsList}
                             component={LessionContent}
+                        />
+                        <Route
+                            path="/baihocnew/:topicId"
+                            component={LessonContentNew}
+                        />
+                        <Route
+                            path="/learn"
+                            // component={LessionsList}
+                            component={LessonLearn}
                         />
                         <Route path="/baihoc" component={BaiHoc} />
                         <Route path="/login" component={Login} />
