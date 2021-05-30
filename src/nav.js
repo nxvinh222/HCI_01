@@ -84,21 +84,21 @@ export default class Nav extends Component {
                             :
                                 <>
                                  <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#header">Giới thiệu<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link page-scroll" href="/#header">Giới thiệu<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#home2">Nội dung khóa học</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#home3">Liên hệ</a>
+                                    <a class="nav-link page-scroll" href="/#home2">Nội dung khóa học</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="login.html">Đăng nhập</a>
+                                    <a class="nav-link page-scroll" href="/#home3">Liên hệ</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="/login">Đăng nhập</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="register.html">Đăng ký</a>
+                                    <a class="nav-link page-scroll" href="/register">Đăng ký</a>
                                
                                 </li>
                             </>
