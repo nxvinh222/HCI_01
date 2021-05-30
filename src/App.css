@@ -34,8 +34,8 @@ table.table-borderless {
 }
 
 .container {
-  margin-top: 7rem;
-  overflow-y: auto;
+  margin-top: 5rem;
+  /* overflow-y: auto; */
 }
 
 .logo {

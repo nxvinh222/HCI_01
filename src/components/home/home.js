@@ -16,7 +16,7 @@ export default class Home extends Component {
             <div>
                 <div class="header"id="header">
                     <div class="header-content">
-                        <div class="container">
+                        <div class="">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="text-container">
@@ -42,7 +42,7 @@ export default class Home extends Component {
 
 
                <div id="home2" class="cards-1">
-                <div class="container">
+                <div class="">
                    <div class="row">
                             <div class="col-lg-12 wow zoomIn">
                                 <h2 class="tieude1">NỘI DUNG KHÓA HỌC</h2>
