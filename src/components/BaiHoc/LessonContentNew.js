@@ -6,7 +6,7 @@ import { MdClose, MdArrowForward } from "react-icons/md";
 
 function LessionContentNew(props) {
     const lessionContentWrapperRef = useRef();
-    const { hideLessionContent } = props;
+    // const { hideLessionContent } = props;
     const [lessionPracticeContent, setLessionPracticeContent] = useState(null);
 
     const showLessionPracticeContent = () => {
@@ -26,11 +26,11 @@ function LessionContentNew(props) {
 
     return (
         <div className="">
-            {lessionPracticeContent == null && (
+            {/* {lessionPracticeContent == null && (
                 <div className="close-icon" onClick={hideLessionContent}>
                     <a href="/baihoc"><MdClose /></a>
                 </div>
-            )}
+            )} */}
             <div className="row my-3">
                 <span className="previous-lesson col text-left">
                     <a>

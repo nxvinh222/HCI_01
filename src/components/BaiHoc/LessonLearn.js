@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./luyengo.css";
-import { Tabs, Tab } from "react-bootstrap";
-import LuyenGoDoan from "./LuyengGoDoan/LuyenGoDoan";
 import LuyenGoAm from "./LuyengGoDoan/LuyenGoAm";
-import Huongdan from "./LuyengGoDoan/Huongdan";
 import VirtualKeyboard from "../keyboard/virtualKeyboard/VirtualKeyboard";
+import { MdClose } from "react-icons/md";
 
 const LessonLearn = () => {
 
     return (
         <>
+            <div className="close-icon">
+                <a href="/baihoc"><MdClose /></a>
+            </div>
             <div className="row my-3">
                 <span className="previous-lesson col text-left">
                     <a href='/baihoc/1'>
