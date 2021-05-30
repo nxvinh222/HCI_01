@@ -53,7 +53,7 @@ export default class Nav extends Component {
                                     </NavLink>
                                 </li>
                                 <li className="nav-link">
-                                https://github.com/nxvinh222/HCI_01/pull/2/conflict?name=src%252Fnav.js&ancestor_oid=706990b5367e5d9e31275aba207504c6e8c98700&base_oid=b51a10b96480fc5e2453f7bde16f2deea575accd&head_oid=14c750032c0770d90164a716532dd9134ab28e57    <NavLink to="/tiendo" activeClassName="active">
+                                    <NavLink to="/tiendo" activeClassName="active">
                                         Tiến độ
                                     </NavLink>
                                 </li>
