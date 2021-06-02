@@ -19,11 +19,11 @@ const LuyenGo = () => {
                     <Huongdan/>
                 </Tab>
 
-                <Tab eventKey="luyen-go-am" title="Luyện gõ âm">
+                {/* <Tab eventKey="luyen-go-am" title="Luyện gõ âm">
                     <div className="tab-item-wrapper">
                         <LuyenGoAm />
                     </div>
-                </Tab>
+                </Tab> */}
                 <Tab eventKey="luyen-go-cau" title="Luyện gõ đoạn">
                     <LuyenGoDoan />
                 </Tab>

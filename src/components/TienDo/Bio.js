@@ -26,18 +26,14 @@ function Bio() {
                     <MdKeyboard color="#FFC107" size="2.5em" />
                     <span>Tốc độ gõ trung bình: 31 WPM</span>
                 </li>
-                <li id="average-accuracy">
-                    <MdKeyboard color="#ff0000" size="2.5em" />
-                    <span>Độ chính xác trung bình: 56%</span>
-                </li>
                 <li id="competitions">
                     <MdSupervisorAccount color="#17A2B8" size="2.5em" />
-                    <span>Tham gia 5 cuộc thi</span>
+                    <span>Xếp hạng lý thuyết : Trung bình</span>
                 </li>
                 <hr />
                 <li id="ranking">
                     <BiAward color="#FFC107" size="2.5em" />
-                    <span>Ký sĩ nghiệp dư</span>
+                    <span>Rank : 120</span>
                     <BiHelpCircle
                         size="1.5rem"
                         style={{ marginLeft: "1rem" }}
