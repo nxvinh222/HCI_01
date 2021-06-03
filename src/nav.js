@@ -73,6 +73,15 @@ export default class Nav extends Component {
 
                                 <li className="nav-link">
                                     <NavLink
+                                        to="/tudien"
+                                        activeClassName="active"
+                                    >
+                                        Từ điển
+                                    </NavLink>
+                                </li>
+
+                                <li className="nav-link">
+                                    <NavLink
                                         onClick={this.logout}
                                         to="/"
                                         activeClassName="active"

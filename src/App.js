@@ -14,6 +14,7 @@ import LessonLearn from "./components/BaiHoc/LessonLearn";
 import Thidau from "./components/thidau/Thidau";
 import TienDo from "./components/TienDo/tiendo";
 import Soanthao from "./components/soanthao/Soanthao";
+import TuDien from "./components/TuDien/TuDien";
 import Footer from "./footer";
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
                         <Route path="/tiendo" component={TienDo} />
                         <Route path="/thidau" component={Thidau} />
                         <Route path="/soanthao" component={Soanthao} />
+                        <Route path="/tudien" component={TuDien} />
                     </Switch>
                 </div>
                 <Footer />
