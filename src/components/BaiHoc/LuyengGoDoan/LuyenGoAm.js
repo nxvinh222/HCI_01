@@ -73,7 +73,7 @@ const LuyenGoAm = () => {
             setInput(currenChar)
             setCorrectIndex(correctIndex + 1)
             setIsError(false)
-            outputRef.current.innerHTML += key
+            outputRef.current.innerHTML += key 
         } else {
             if (allowedKeys.includes(key)) {
                 setErrorIndex(errorIndex + 1)
