@@ -38,7 +38,7 @@ export default class Radar extends Component {
                     size: 0
                 },
                 xaxis: {
-                    categories: ['Phan 1', 'Phan 2', 'Phan 3', 'Phan 4', 'Phan 5', 'Phan 6']
+                    categories: ['Phần 1', 'Phần 2', 'Phần 3', 'Phầnn 4', 'Phần 5', 'Phần 6']
                 }
             },
 
