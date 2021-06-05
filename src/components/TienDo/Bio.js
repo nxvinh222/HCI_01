@@ -1,5 +1,5 @@
 import rankingHelp from "../../static/images/ranking-help.svg";
-import avatar from "../../static/images/Avatar.svg";
+import avata from "../../static/images/avata.jpg";
 import { MdKeyboard, MdSupervisorAccount } from "react-icons/md";
 import { BiUserCheck, BiAward, BiHelpCircle } from "react-icons/bi";
 import { useRef } from "react";
@@ -15,7 +15,7 @@ function Bio() {
     return (
         <div className="bio shadow">
             <div className="avatar">
-                <img src={avatar} alt="user" />
+                <img src={avata} alt="user" />
             </div>
             <ul>
                 <li id="member-from">
