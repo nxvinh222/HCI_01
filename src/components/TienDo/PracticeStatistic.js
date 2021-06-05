@@ -1,7 +1,3 @@
-import goPhim from "../../static/images/go-phim.svg";
-import goAm from "../../static/images/go-am.svg";
-import goTu from "../../static/images/go-tu.svg";
-import goCau from "../../static/images/go-cau.svg";
 import Gophim from "./digram/Gophim"
 import GoDoan from "./digram/GoDoan";
 

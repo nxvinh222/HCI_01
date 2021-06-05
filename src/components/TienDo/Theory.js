@@ -1,8 +1,4 @@
 import Phan2 from "./digram/Phan2";
-import Phan3 from "./digram/Phan3";
-import Phan4 from "./digram/Phan4";
-import Phan5 from "./digram/Phan5";
-import Phan6 from "./digram/Phan6";
 import Radar from "./digram/Radar";
 
 function Theory() {
