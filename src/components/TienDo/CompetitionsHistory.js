@@ -29,7 +29,7 @@ function CompetitionsHistory() {
                     <tr>
                         <td>
                             <BiCalendar />
-                            11/12/2020&nbsp;&nbsp;&nbsp;&nbsp;
+                            25/4/2021&nbsp;&nbsp;&nbsp;&nbsp;
                             <BiTime />
                             19:31:13
                         </td>
@@ -40,7 +40,7 @@ function CompetitionsHistory() {
                     <tr>
                         <td>
                             <BiCalendar />
-                            11/12/2020&nbsp;&nbsp;&nbsp;&nbsp;
+                            30/4/2021&nbsp;&nbsp;&nbsp;&nbsp;
                             <BiTime />
                             19:21:07
                         </td>
@@ -51,7 +51,7 @@ function CompetitionsHistory() {
                     <tr>
                         <td>
                             <BiCalendar />
-                            10/12/2020&nbsp;&nbsp;&nbsp;&nbsp;
+                            4/5/2021&nbsp;&nbsp;&nbsp;&nbsp;
                             <BiTime />
                             20:31:03
                         </td>
@@ -62,7 +62,7 @@ function CompetitionsHistory() {
                     <tr>
                         <td>
                             <BiCalendar />
-                            10/12/2020&nbsp;&nbsp;&nbsp;&nbsp;
+                            9/5/2021&nbsp;&nbsp;&nbsp;&nbsp;
                             <BiTime />
                             20:25:29
                         </td>

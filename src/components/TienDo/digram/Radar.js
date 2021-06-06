@@ -8,13 +8,13 @@ export default class Radar extends Component {
 
             series: [{
                 name: 'You',
-                data: [80, 50, 30, 40, 100, 20],
+                data: [50, 50, 30, 40, 20, 10],
             }, {
                 name: 'Xếp hạng TB',
-                data: [20, 30, 40, 80, 20, 80],
+                data: [50, 50, 50, 50, 50, 50],
             }, {
                 name: 'Xếp hạng Tốt',
-                data: [44, 76, 78, 13, 43, 10],
+                data: [ 90, 90, 90, 90, 90, 90],
             }],
             options: {
                 chart: {

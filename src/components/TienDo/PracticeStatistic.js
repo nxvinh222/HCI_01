@@ -14,7 +14,7 @@ function PracticeStatistic() {
                     <Gophim/>
                     <div className="evaluation">
                         <div className="speed-evaluation">
-                            Tốc độ: <span className="week-evaluation">Yếu</span>
+                            Tốc độ: <span className="normal-evaluation">Trung Bình</span>
                         </div>
                     </div>
                 </li>
@@ -22,7 +22,7 @@ function PracticeStatistic() {
                     <GoDoan/>
                     <div className="evaluation">
                         <div className="speed-evaluation">
-                            Tốc độ: <span className="week-evaluation">Yếu</span>
+                            Tốc độ: <span className="normal-evaluation">Trung Bình</span>
                         </div>
                     </div>
                 </li>
