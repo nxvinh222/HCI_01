@@ -13,7 +13,7 @@ function Theory() {
                     <div class="col-sm-8">
                         <div class="card">
                             <Radar />
-                            <div class="card-bodybio shadow">
+                            <div class="card-body shadow">
                                 <h5 class="card-title">Chú thích</h5>
                                 <div class= "row">
                                     <div class="col-sm-6">

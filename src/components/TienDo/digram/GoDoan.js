@@ -14,7 +14,6 @@ import { useRechartToPng } from "recharts-to-png";
 export const Test = () => {
   const [containerRef, { width: containerWidth }] = useMeasure();
   // The chart ref that we want to download the PNG for.
-  const [png, ref] = useRechartToPng();
 
   const data = [
     { name: "25/4", wpm: 30, amt: 3000 },
@@ -31,7 +30,6 @@ export const Test = () => {
       <h2>Gõ đoạn</h2>
       <br />
       <LineChart
-        ref={ref} // Save the ref of the chart
         data={data}
         height={300}
         width={550}
