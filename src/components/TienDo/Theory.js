@@ -17,9 +17,11 @@ function Theory() {
                                 <h5 class="card-title">Chú thích</h5>
                                 <div class= "row">
                                     <div class="col-sm-6">
-                                        <p class="card-text">Phần 1: Giới thiệu bàn phím tốc ký</p>
+                                        <p class="card-text">Phần 1: Giới thiệu bàn phím </p>
+                                        <p class="card-text">tốc ký</p>
                                         <p class="card-text">Phần 2: Quy tắc gõ âm đầu</p>
-                                        <p class="card-text">Phần 3: Quy tắc gõ âm chính không có âm đệm</p>
+                                        <p class="card-text">Phần 3: Quy tắc gõ âm chính không </p>
+                                        <p class="card-text">có âm chính </p>
                                     </div>
                                     <div  class="col-sm-6">
                                         <p class="card-text">Phần 4: Quy tắc gõ âm chính có âm đệm</p>
