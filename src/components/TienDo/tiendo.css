@@ -171,3 +171,7 @@
 .history-table td {
   padding: 0.75rem 3rem;
 }
+
+.history-table thead {
+  background-color: #d81e5b;
+}
