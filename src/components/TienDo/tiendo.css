@@ -173,5 +173,5 @@
 }
 
 .history-table thead {
-  background-color: #d81e5b;
+  background-color: var(--main-color);
 }
