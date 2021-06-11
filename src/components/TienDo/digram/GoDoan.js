@@ -16,13 +16,13 @@ export const Test = () => {
   // The chart ref that we want to download the PNG for.
 
   const data = [
-    { name: "25/4", wpm: 30, amt: 3000 },
-    { name: "30/4", wpm: 35, amt: 2210 },
-    { name: "4/5", wpm: 40,  amt: 2290 },
-    { name: "9/5", wpm: 45,  amt: 2000 },
-    { name: "14/5", wpm: 55,  amt: 2181 },
-    { name: "19/5", wpm: 58,  amt: 2500 },
-    { name: "24/5", wpm: 58,  amt: 2500 },
+    { name: "25/4", wpm: 30, pc: 20, amt: 3000 },
+    { name: "30/4", wpm: 35, pc: 50,amt: 2210 },
+    { name: "4/5", wpm: 40,  pc: 60,amt: 2290 },
+    { name: "9/5", wpm: 45,  pc: 55,amt: 2000 },
+    { name: "14/5", wpm: 55,  pc: 51,amt: 2181 },
+    { name: "19/5", wpm: 58,  pc: 70,amt: 2500 },
+    { name: "24/5", wpm: 58,  pc: 80,amt: 2500 },
   ];
 
   return (
@@ -40,13 +40,13 @@ export const Test = () => {
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
         <Legend wrapperStyle={{ bottom: 5 }} />
-        {/* <Line
+        <Line
           type="monotone"
-          dataKey="pv"
-          stroke="#8884d8"
+          dataKey="pc"
+          stroke="#006400"
           activeDot={{ r: 10 }}
-        /> */}
-        <Line type="monotone" dataKey="wpm" stroke="#8884d8" activeDot={{ r: 10 }} />
+        />
+        <Line type="monotone" dataKey="wpm" stroke="#8B008B" activeDot={{ r: 10 }} />
       </LineChart>
     </div>
   );
