@@ -10,16 +10,16 @@ function RacingGame(props) {
             {!gameStarted && <GameStartWating />}
             <Street />
             <div className="players-wrapper">
-                <Player playerName={"Love Hust"} gameEnded={gameEnded} />
-                <Player playerName={"Niar"} gameEnded={gameEnded} />
+                <Player playerName={"Xuan Vinh"} gameEnded={gameEnded} />
+                <Player playerName={"Long"} gameEnded={gameEnded} />
                 <Player
                     isMainPlayer={true}
                     playerName={"You"}
                     gameEnded={gameEnded}
                 />
-                <Player playerName={"Nguyen Van"} gameEnded={gameEnded} />
+                <Player playerName={"Huy"} gameEnded={gameEnded} />
                 <Player
-                    playerName={"Two Steps From Hell"}
+                    playerName={"Cong Vinh"}
                     gameEnded={gameEnded}
                 />
             </div>

@@ -62,28 +62,28 @@ function Result(props) {
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td className="player-name">Love Hust</td>
+                            <td className="player-name">Xuan Vinh</td>
                             <td>1:34</td>
                             <td>123</td>
                             <td>86</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td className="player-name">Two Steps From Hell</td>
+                            <td className="player-name">Cong Vinh</td>
                             <td>1:43</td>
                             <td>116</td>
                             <td>93</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td className="player-name">Niar</td>
+                            <td className="player-name">Long</td>
                             <td>1:52</td>
                             <td>103</td>
                             <td>100</td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td className="player-name">Nguyen Van</td>
+                            <td className="player-name">Huy</td>
                             <td>1:59</td>
                             <td>91</td>
                             <td>100</td>

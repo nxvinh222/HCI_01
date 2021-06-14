@@ -12,16 +12,6 @@ function Thidau() {
     const [gameStarted, setGameStarted] = useState(false);
     const [gameEnded, setGameEnded] = useState(false);
 
-    // useEffect(() => {
-    //     const timeOutId = setTimeout(() => {
-    //         setFindingPlayers(false);
-    //     }, 5000);
-    //
-    //     return () => {
-    //         clearTimeout(timeOutId);
-    //     };
-    // }, []);
-
     useEffect(() => {
         if (!findingPlayers) {
             const timeOutId = setTimeout(() => {
