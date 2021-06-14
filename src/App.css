@@ -14,7 +14,7 @@ h6 {
 }
 
 :root {
-  --main-color:#D81E5B;
+  --main-color: #d81e5b;
 }
 
 .container {
@@ -122,14 +122,14 @@ a:hover {
 
 .btn-primary {
   background-color: var(--main-color) !important;
-  color: white !important; 
+  color: white !important;
   outline: none;
 }
 .btn-primary:hover {
   background-color: white !important;
-  color: var(--main-color) !important; 
+  color: var(--main-color) !important;
   border-color: var(--main-color) !important;
-  transform: scale(1.1) perspective(0.2px)
+  transform: scale(1.1) perspective(0.2px);
 }
 
 *:focus {
@@ -162,6 +162,7 @@ a:hover {
 
 footer {
   padding: 2rem 8.3333%;
+  overflow: hidden;
 }
 
 .main-text-color {
