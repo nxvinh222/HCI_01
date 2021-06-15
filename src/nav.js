@@ -5,6 +5,7 @@ import { MdHome, MdSearch } from "react-icons/md";
 import logo from "./static/images/typing-fr.png";
 import avatar from "./static/images/logo-soict.png"
 
+
 export default class Nav extends Component {
     constructor(props){
         super(props);
@@ -41,9 +42,9 @@ export default class Nav extends Component {
                             <img
                             src={logo}
                             alt="logo"
-                            width="70"
-                            className="mb-3"
+                            width="90"
                         />
+                        <h5 style={{ color: 'blue' }}>Gõ Tốc Ký</h5>
                         </Link>
 
                         <ul className="navbar-nav  ml-auto">
@@ -93,13 +94,8 @@ export default class Nav extends Component {
                                         to="#"
                                         activeClassName="active"
                                     >
-                                        <img
-                                            src={avatar}
-                                            alt="avatar"
-                                            width="30"
-                                            className="rounded-full flex "
-                                        />
-                                        <p>{localStorage.getItem('username')}</p>
+                                    <h4 style={{ color: 'blue' }}>{localStorage.getItem('username')}</h4>
+                                    
                                     </NavLink>
                                 </li>
 
