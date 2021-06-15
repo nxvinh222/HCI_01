@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./App.css";
 import { MdHome, MdSearch } from "react-icons/md";
+import logo from "./static/images/typing-fr.png";
+import avatar from "./static/images/logo-soict.png"
 
 export default class Nav extends Component {
     constructor(props){
@@ -16,7 +18,8 @@ export default class Nav extends Component {
             this.state= {
                 logined:false
             }
-        }  
+        } 
+        this.state.username = name; 
 
     }
 
@@ -35,7 +38,12 @@ export default class Nav extends Component {
                         id="navbarSupportedContent"
                     >
                         <Link to={"/"} className="navbar-brand logo">
-                            Gõ Tốc Ký
+                            <img
+                            src={logo}
+                            alt="logo"
+                            width="70"
+                            className="mb-3"
+                        />
                         </Link>
 
                         <ul className="navbar-nav  ml-auto">
@@ -77,6 +85,21 @@ export default class Nav extends Component {
                                         activeClassName="active"
                                     >
                                         Từ điển
+                                    </NavLink>
+                                </li>
+
+                                <li className="nav-link">
+                                    <NavLink
+                                        to="#"
+                                        activeClassName="active"
+                                    >
+                                        <img
+                                            src={avatar}
+                                            alt="avatar"
+                                            width="30"
+                                            className="rounded-full flex "
+                                        />
+                                        <p>{localStorage.getItem('username')}</p>
                                     </NavLink>
                                 </li>
 

@@ -12,6 +12,7 @@ export default class Login extends React.Component {
       password: ''
     };
   }
+  
   handleNameChange(e) {
     this.setState({ name: e.target.value })
   }
@@ -20,17 +21,19 @@ export default class Login extends React.Component {
   }
 
   signIn(e) {
-        let username = this.state.name
-        localStorage.setItem("username", username)
-        this.props.history.push('/')
-        window.location.reload()
+    let username = this.state.name
+    localStorage.setItem("username", username)
+    this.props.history.push('/')
+    window.location.reload()
+
+        
   }
   render() {
     return (
       <div>
         <div className="row" style={{ marginTop: '20px' }}>
           <div className="col-md-4 offset-md-4">
-            <form className="form-signin">
+            <form onSubmit={this.signIn} method="POST">
               <h2 className="form-signin-heading">Đăng nhập</h2>
 
               <label for="inputname" 
@@ -60,9 +63,10 @@ export default class Login extends React.Component {
                     <br/>
 
               <button 
-                    className="btn btn-lg btn-primary btn-block" 
-                    onClick={this.signIn} 
-                    type="button">Đăng nhập</button>
+                    disabled={this.state.isInValid}
+                    type="submit"
+                    className="btn btn-lg btn-primary btn-block"
+                    >Đăng nhập</button>
 
               {/* 
               <Link to={'/create'} >

@@ -56,7 +56,7 @@ export default class Register extends Component {
         return (
             <div style={{marginTop: 10}}>
                 <h3>Add New User</h3>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} method="POST">
                     <div className="form-group">
                         <label>Email: </label>
                         <input type="text" className="form-control"
