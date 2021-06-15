@@ -36,10 +36,10 @@ function Theory() {
                         <div class="card">
                             <div class="card-header"><h5>Đề xuất cải thiện</h5></div>
                             <div class="card-body">
-                                <p class="card-text">Gõ câu</p>
-                                <p class="card-text">Gõ từ</p>
-                                <p class="card-text">Gõ âm</p>
-                                <p class="card-text">Gõ phím</p>
+                                <p class="card-text">Phần 6: Quy tắc gõ âm cuôi</p>
+                                <p class="card-text">Phần 5: Quy tắc gõ dấu thanh</p>
+                                <p class="card-text">Phần 4: Quy tắc gõ âm chính có âm đệm</p>
+                                <p class="card-text">Phần 3: Quy tắc gõ âm chính không</p>
                             </div>
                         </div>
                     </div>
