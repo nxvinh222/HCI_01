@@ -31,13 +31,13 @@ export default class TuDien extends React.Component {
                      <div style={{margin: 'auto', width: '50%', padding: 30, paddingLeft: 200}}>
                         <ul className="nav nav-pills">
                             <li>
-                            <button id="am-dau" onClick = {amDau} style={{width: 'fit-content', marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Đầu</button>
+                            <button id="am-dau" onClick = {amDau} style={{width: 'fit-content',margin:2, marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Đầu</button>
                             </li>
                             <li>
-                            <button id="am-chinh" onClick = {amChinh} style={{width: 'fit-content', marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Chính</button>
+                            <button id="am-chinh" onClick = {amChinh} style={{width: 'fit-content',margin:2, marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Chính</button>
                             </li>
                             <li>
-                            <button id="am-cuoi" onClick = {amCuoi} style={{width: 'fit-content', marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Cuối</button>
+                            <button id="am-cuoi" onClick = {amCuoi} style={{width: 'fit-content',margin:2, marginTop: '-8px'}} type="button" className="btn btn-primary btn-go">Âm Cuối</button>
                             </li>   
                         </ul>
                     </div>
